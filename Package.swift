@@ -41,7 +41,7 @@ let package = Package(
             targets: ["AppModule"],
             bundleIdentifier: "xyz.kebo.try-in-a-playground",
             teamIdentifier: "X4678G5DL2",
-            displayVersion: "1.0",
+            displayVersion: "1.0.0",
             bundleVersion: "1",
             appIcon: .placeholder(icon: .rocket),
             accentColor: .presetColor(.green),
