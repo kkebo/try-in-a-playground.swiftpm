@@ -8,10 +8,10 @@ struct ContentView {
 
     private func openURL(_ url: URL) {
         Task {
-            self.isLoading = true
-            defer { self.isLoading = false }
             do {
-                self.generator = try await .init(url: url)
+                self.generator = try await withLoading(isLoading: self.$isLoading) {
+                    try await .init(url: url)
+                }
             } catch {
                 self.error = error
             }
