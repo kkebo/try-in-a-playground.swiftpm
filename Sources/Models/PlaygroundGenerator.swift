@@ -41,9 +41,9 @@ struct PlaygroundGenerator {
         else { throw PlaygroundGeneratorError.missingDependenciesQuery }
         let tagsURL =
             githubAPIBaseURL
-            .appending(component: "repos")
-            .appending(component: name)
-            .appending(component: "git/matching-refs/tags")
+            .appending(path: "repos")
+            .appending(path: name)
+            .appending(path: "git/matching-refs/tags")
         let (data, _) = try await URLSession.shared.data(from: tagsURL)
         let tag = try JSONDecoder().decode(GitReferences.self, from: data).lazy
             .map(\.ref)
