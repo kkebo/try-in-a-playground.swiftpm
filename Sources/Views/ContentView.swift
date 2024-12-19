@@ -25,7 +25,21 @@ extension ContentView: View {
                 LoadingView()
             } else {
                 switch self.generator {
-                case nil: WelcomeView()
+                case nil:
+                    WelcomeView()
+                        .task {
+                            do {
+                                self.generator = try await .success(
+                                    .init(
+                                        url: URL(
+                                            string: "spi-playgrounds://open?dependencies=kkebo/RingProgressViewStyle"
+                                        )!
+                                    )
+                                )
+                            } catch {
+                                self.generator = .failure(error)
+                            }
+                        }
                 case .success(let generator): PackageView(generator: generator)
                 case .failure(let error): ErrorView(error: error)
                 }
