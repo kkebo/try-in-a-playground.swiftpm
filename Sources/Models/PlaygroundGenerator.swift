@@ -53,7 +53,7 @@ struct PlaygroundGenerator {
             .max()
         guard let tag else { throw PlaygroundGeneratorError.notYetReleased }
         self.packageName = name
-        self.packageURL = githubBaseURL.appending(component: name)
+        self.packageURL = githubBaseURL.appending(path: name)
         self.latestVersion = tag.description
     }
 
