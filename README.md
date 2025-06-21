@@ -4,11 +4,11 @@ This app is an iPad version of Swift Package Index's [Try in a Playground](https
 
 ## Target platforms
 
-- iPadOS 17.4 or later
+- iPadOS 18.1 or later
 
 ## Build requirements
 
-- Swift Playgrounds 4.5.1 or later (iPadOS 17.4 or later)
+- Swift Playgrounds 4.6.4 or later (iPadOS 18.1 or later)
 
 ## Get Started
 
