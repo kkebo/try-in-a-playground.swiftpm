@@ -9,7 +9,7 @@ import PackageDescription
 let package = Package(
     name: "try-in-a-playground.swiftpm",
     platforms: [
-        .iOS("17.4")
+        .iOS("18.1")
     ],
     products: [],
     dependencies: [
