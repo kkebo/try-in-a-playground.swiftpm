@@ -152,7 +152,7 @@ struct PlaygroundGenerator {
             """
         let fm = FileManager.default
         let tmp = URL.temporaryDirectory
-        let packageURL = tmp.appending(path: "My App.swiftpm")
+        let packageURL = tmp.appending(component: "My App.swiftpm")
         if fm.fileExists(atPath: packageURL.path(percentEncoded: false)) {
             try fm.removeItem(at: packageURL)
         }
@@ -161,17 +161,17 @@ struct PlaygroundGenerator {
             withIntermediateDirectories: false
         )
         try manifest.write(
-            to: packageURL.appending(path: "Package.swift"),
+            to: packageURL.appending(component: "Package.swift"),
             atomically: true,
             encoding: .utf8
         )
         try myApp.write(
-            to: packageURL.appending(path: "MyApp.swift"),
+            to: packageURL.appending(component: "MyApp.swift"),
             atomically: true,
             encoding: .utf8
         )
         try contentView.write(
-            to: packageURL.appending(path: "ContentView.swift"),
+            to: packageURL.appending(component: "ContentView.swift"),
             atomically: true,
             encoding: .utf8
         )
