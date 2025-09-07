@@ -10,11 +10,13 @@ extension WelcomeView: View {
             Grid(alignment: .topLeading, verticalSpacing: 8) {
                 GridRow {
                     Text("1.")
-                    Text(.init("Find your interested package on the [Swift Package Index](\(spiURL))"))
+                    Text(.init("Find your interested package on the [Swift Package Index](\(spiURL))."))
                 }
                 GridRow {
                     Text("2.")
-                    Text("Tap \"Try in a Playground\" from any package page")
+                    Text(
+                        "Tap \"Try in a Playground\" from any package page. If nothing happens, please reload the page and try again."
+                    )
                 }
             }
         }
