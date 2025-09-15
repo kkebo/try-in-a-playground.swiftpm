@@ -41,7 +41,7 @@ let package = Package(
             teamIdentifier: "X4678G5DL2",
             displayVersion: "1.0.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .rocket),
+            appIcon: .asset("AppIcon"),
             accentColor: .presetColor(.green),
             supportedDeviceFamilies: [
                 .pad,
