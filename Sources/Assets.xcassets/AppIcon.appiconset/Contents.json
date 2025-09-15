@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "try-in-a-playground-iOS-Default-1024x1024@1x.png",
+      "filename" : "try-in-a-playground-icon.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -13,7 +13,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "try-in-a-playground-iOS-Dark-1024x1024@1x.png",
+      "filename" : "try-in-a-playground-icon-dark.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -25,7 +25,7 @@
           "value" : "tinted"
         }
       ],
-      "filename" : "try-in-a-playground-iOS-ClearDark-1024x1024@1x.png",
+      "filename" : "try-in-a-playground-icon-tinted.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
