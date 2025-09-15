@@ -53,6 +53,7 @@ let package = Package(
                 .landscapeLeft,
                 .portraitUpsideDown(.when(deviceFamilies: [.pad])),
             ],
+            appCategory: .developerTools,
             additionalInfoPlistContentFilePath: "Info.plist"
         )
     ]
