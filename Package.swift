@@ -43,7 +43,7 @@ let package = Package(
             bundleIdentifier: "xyz.kebo.try-in-a-playground",
             teamIdentifier: "X4678G5DL2",
             displayVersion: "1.0.0",
-            bundleVersion: "2",
+            bundleVersion: "3",
             appIcon: .asset("AppIcon"),
             accentColor: .presetColor(.green),
             supportedDeviceFamilies: [
