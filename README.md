@@ -1,5 +1,8 @@
 # Try in a Playground
 
+> [!CAUTION]
+> The Swift Package Index has [removed the "Try in a Playground" feature](https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server/pull/4070), making this app no longer functional.
+
 This app is an iPad version of Swift Package Index's [Try in a Playground](https://swiftpackageindex.com/try-in-a-playground).
 
 ## Target platforms
